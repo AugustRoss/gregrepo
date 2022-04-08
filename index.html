@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENT TIME</title>
+          <style>
+          * {
+  box-sizing: border-box;
+}
+.meme {
+  margin: auto;
+  width: 950px;
+  height: 950px;
+  background-image: url('unknown.png');
+  background-size: 100%; 
+  text-align: center;
+  position: relative;
+}
+         
+         p {
+  position: absolute; 
+  left: 0;
+  right: 0; 
+  margin: 0px 0;
+  padding: 0 0px;
+  font-family: impact;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0px 2px 0 #000,
+  2px 0px 0 #000,
+  0px -2px 0 #000,
+  -2px 0px 0 #000,
+  2px 2px 5px #000;
+}
+
+.bottom {
+   bottom: 0;
+ }
+
+.top {
+   top: 0;
+ }
+      </style>
+  </head>
+  <body>
+  <div class="meme">
+  <p class="top">ITS ONLY <span id="date"></span>?</p>
+  <p class="bottom">*CUMS AND DIES*</p>
+</div>
+<script>
+document.getElementById("date").innerHTML = Date();
+setInterval(function(){ 
+    document.getElementById("date").innerHTML = Date();
+}, 1000);
+</script>
+  </body>
+</html>
